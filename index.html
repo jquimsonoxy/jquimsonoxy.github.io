@@ -1,11 +1,215 @@
 <!DOCTYPE HTML>
  <html>
 <head>
-<meta charset="utf-8">
-<title>Hello, World!</title>
+    <style>
+        /**fonts**/
+        @font-face {
+          font-family: "proxima_nova";
+          src: url(Proxima_Nova_Regular.otf);
+        }
+        @font-face {
+          font-family: "proxima_nova_bold";
+          src: url(Proxima_Nova_Bold.otf);
+        }
+        @font-face {
+          font-family: "proxima_nova_light";
+          src: url(joseph.quimson.net/files/Proxima_Nova_Light.otf);
+        }
+        @font-face {
+          font-family: "proxima_nova_italic";
+          src: url(joseph.quimson.net/files/Proxima_Nova_Regular_Italic.otf);
+        }
+            /**body+html**/
+        html, body
+        {
+          height: 100%;
+          width:100%;
+          margin: 0;
+          font-family:"proxima_nova";
+        }
+
+        div {
+            font-family:'proxima_nova';
+            position:relative;
+        }
+        div.light{font-family: "proxima_nova_light";}
+        b{font-family: "proxima_nova_bold";}
+        i{font-family: "proxima_nova_italic";}
+        /** Navigation Bar**/
+        #downIntro, #downAbout{cursor:pointer;}
+        #panel0,#flip,#panel1,#panel2,#panel3
+        {
+          padding:5px;
+          text-align:center;
+          width:60px;
+          height:60px;
+          z-index:3;
+          position:relative;
+          right:5px;
+          cursor:pointer;
+        }
+
+
+        #navbutton, #navbuttontop, #navbuttonabout, #navbuttonlikes, #navbuttoncontact{
+          top:6px;
+          right:1px;
+          height: 50px;
+          width: 50px;
+        }
+
+
+
+        #navbar
+        {
+          z-index:2;
+          width:47px;
+          top:5%;
+          right:5%;
+          position:fixed;
+        }
+        #wrapper
+        {
+          height: 100%;
+          width: 100%;
+          z-index:2;
+          position: fixed;
+          background-color:transparent;
+        }
+
+        ::selection{
+            background:white;
+        }
+        /*colors*/
+        .blue
+        {
+            background-color:#0AA0F5;
+            color:#044166;
+        }
+
+
+        .orange
+        {
+            background-color: #F55F0A;
+            color:#592403;
+        }
+        .green
+        {
+            background-color: #0FF5A0;
+            color:#05593A;
+        }
+        .pink
+        {
+            background-color: #FF1068;
+            color: #590524;
+        }
+        .darkblue
+        {
+            background-color:#03314D;
+            color:#ffffff;
+        }
+        .red{
+            background-color:#F24444;
+            color:#661D1D;
+        }
+        .title{
+            color:#ffffff;
+            font-size:3em;
+            font-family:'proxima_nova';
+            position:relative;
+        }
+        img
+        {
+            position:relative;
+        }
+
+        .lineBreak{
+            border-bottom: 3px solid #FFFFFF;
+            margin: 35px auto auto;
+            overflow: visible;
+            width: 60px;
+
+        }
+        .contactLink{
+
+        }
+        a
+        {
+            text-decoration:none;
+            color:white;
+        }
+        a:visited
+        {
+            color:white;
+        }
+
+        /**sections**/
+        #intro{
+            background-color:#0AA0F5;
+            color:#044166;
+            height:100%;
+            min-height:665px;
+            border-bottom:solid white 10px;
+        }
+        #about{
+            background-color: #0FF5A0;
+            color:#05593A;
+            height:100%;
+            min-height:600px;
+            border-bottom:solid white 10px;
+        }
+        #likes{
+            background-color: #FF4086;
+            color: #590524;
+            height:100%;
+            border-bottom:solid white 10px;
+            min-height:441px;
+        }
+        #contact{
+            background-color:#011826;
+            color:#ffffff;
+            height:60%;
+            min-height:400px;
+            text-align:center;
+        }
+        address{
+            font-family:'proxima_nova';
+        }
+        i
+        {
+            font-style:normal;
+            font-size:1.5em;
+            font-family:'proxima_nova_light';
+        }
+        /**Intro**/
+        #logo
+        {
+            position:absolute;
+            top:5%;
+            left:5%;
+            height:90px;
+        }
+        #introtext{
+            width:100%;
+            position:relative;
+            top:30%;
+            vertical-align:middle;
+            text-align:center;
+        }
+
+        #introtitle{
+            font-size:3em;
+            color:#ffffff;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
 </head>
 <body>
 <p>Hitml!</p>
-Corpus Corpus etc etc this is a web page
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Gonzo_the_Great.jpg">
+<div id="intro">Corpus Corpus etc etc this is a web page ????
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><b>This is a link even if it isn't underlined</b></a></p></div>
+
+
 </body>
  </html>
